@@ -40,26 +40,7 @@ public class Main
         }
       
     }
-    
-    Node reving(Node head,int k)
-    {
-         Node next=null;
-       Node current=head;
-       int c=0;
-       Node prev=null;
-       while(current!=null && c< k)
-       {
-           next=current.next;
-           current.next=prev;
-           prev=current;
-           current=next;
-           c++;
-       }
-        if (next != null) {
-        head.next = reving(next, k);
-    }
-       return prev;
-    }
+
    void reverse()
    {
        Node next;
@@ -88,9 +69,7 @@ public class Main
 	    System.out.println("\nReverse the elemnt");
 	    m.reverse();
 	    m.dis();
-	     System.out.println("\nReverse by group the elemnt");
-	    m.head=m.reving(m.head,2);
-	    m.dis();
+
 	
 	}
 }
@@ -100,5 +79,4 @@ public class Main
 
 // Reverse the elemnt
 // 10 45 7 5 4 
-// Reverse by group the elemnt
-// 45 10 5 7 4 
+
