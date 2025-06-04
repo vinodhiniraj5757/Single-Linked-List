@@ -95,22 +95,9 @@ public class Main
         while(temp!=null)
         {
             System.out.print(temp.data +" ");
-            temp=temp.next;
-            count++;
-           
+            temp=temp.next;   
         }
       
-    }
-    
-    int length()
-    {
-         int v=count/2;
-       Node curr=head;
-       for(int i=1;i<=v;i++)
-       {
-           curr=curr.next;
-       }
-       return curr.data;
     }
    
 	public static void main(String[] args) {
@@ -122,15 +109,21 @@ public class Main
 	     m.insertbeg(71);
 	    m.insertbeg(11);
 	    m.insertAtPos(2,8);
+	    m.dis();
 	    m.deletebeg();
 	    m.deleteAtPos(2);
 	    
 	  
 	    m.dis();
-	    System.out.println();
-	    System.out.println("Middle elemnet");
-	    System.out.println(m.length());
-	   
 	
 	}
 }
+
+//output
+//before deletion Insertion only
+// 11 71 8 7 4 5 7 
+
+// After deletion operation performed
+	
+// 71 8 4 5 7 
+
