@@ -45,7 +45,6 @@ public class Main
         if(head==null)
         {
             head=newnode;
-            count++;
             return;
         }
         Node temp=head;
@@ -55,7 +54,7 @@ public class Main
         }
         temp.next=newnode;
         newnode.next=null;
-        count++;
+        
     }
     
     void dis()
@@ -65,6 +64,7 @@ public class Main
         {
             System.out.print(temp.data +" ");
             temp=temp.next;
+	     count++;
            
         }
       
@@ -99,9 +99,9 @@ public class Main
 	    
 	  
 	    m.dis();
-	      System.out.println();
+	    System.out.println();
 	    System.out.println("Middle elemnet");
-	      System.out.println(m.length());
+	    System.out.println(m.length());
 	   
 	
 	}
