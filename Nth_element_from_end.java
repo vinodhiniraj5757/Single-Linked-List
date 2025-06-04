@@ -71,3 +71,7 @@ public class Main
 	
 	}
 }
+
+//output
+// 4 5 7 45 10 
+// Elment from end 45
